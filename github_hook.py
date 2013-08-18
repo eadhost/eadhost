@@ -6,6 +6,7 @@
 # http://boto.s3.amazonaws.com/sqs_tut.html
 # http://flask.pocoo.org/snippets/111/
 # http://flask.pocoo.org/snippets/8/
+# http://stackoverflow.com/questions/9007030/how-to-verify-a-post-receive-hook-request-actually-came-from-github
 
 # https://help.github.com/articles/what-ip-addresses-does-github-use-that-i-should-whitelist#service-hook-ip-addresses
 # "We highly recommend that you don't white list IPs for Service Hooks. Instead, setup HTTPS and basic authentication to verify incoming requests."
