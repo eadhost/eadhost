@@ -1,4 +1,4 @@
-generator
+eadhost generator
 =========
 
 static site generator for encoded archival description
