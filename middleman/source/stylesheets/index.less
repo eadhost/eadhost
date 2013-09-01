@@ -1,0 +1,44 @@
+@import "scheme.less"; // color scheme
+@import "bootstrap-theme.less"; // bootstrap
+@import "1pxdeep.less"; // 1pxdeep theme
+@import "style.less";
+
+body {
+  padding-top: 25px;
+}
+
+    .code-color(@color) {
+        background:@color;
+        .contrast(@color);
+        border-color:@color;
+    }
+
+
+.conditions {
+  .make-row();
+}
+.condition1 {
+  .make-sm-column(3);
+  .make-md-column(3);
+  .make-lg-column(3);
+  .code-color(@color2b)
+}
+.condition2 {
+  .make-sm-column(3);
+  .make-sm-column-offset(1);
+  .make-md-column(3);
+  .make-md-column-offset(1);
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+  .code-color(@color3a)
+}
+.condition3 {
+  .make-sm-column(3);
+  .make-sm-column-offset(1);
+  .make-md-column(3);
+  .make-md-column-offset(1);
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+  .code-color(@color4b)
+}
+
