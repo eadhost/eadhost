@@ -1,0 +1,6 @@
+sudo yum -y update
+sudo yum -y install nginx
+sudo chkconfig nginx on
+sudo /etc/init.d/nginx start
+sudo yum -y install python-pip
+sudo pip install virtualenv
