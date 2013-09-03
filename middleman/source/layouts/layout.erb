@@ -13,37 +13,41 @@
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <%= javascript_include_tag  "ie/html5shiv", "ie/respond.min.js" %>
     <![endif]-->
   </head>
 
   <body class="<%= page_classes %>">
-
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">EADhost</a>
+          <a class="navbar-brand">eadhost.org</a>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
     </div>
 
     <div class="container">
         <%= yield %>
-    </div><!-- /.container -->
-
+    </div>
+    <!-- /.container -->
+<h2 class="container">Copyright</h2>
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#" class="container">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="http://www.eadhost.org/">
+    <span property="dct:title">Brian Tingle</span></a>
+  has waived all copyright and related or neighboring rights to
+  this work.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="http://www.eadhost.org/">
+  United States</span>.
+</p>
     <%= javascript_include_tag  "all" %>
   </body>
 </html>

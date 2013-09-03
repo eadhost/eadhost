@@ -1,15 +1,102 @@
 ---
-title: Welcome to EADhost, Free Hosting for Archives and Special Collections
+title: Welcome to eadhost.org, Free Hosting for Archives and Special Collections
 ---
 
-<div class="jumbotron color3">
-<h1 style="text-align: center;">Free EAD Hosting</h1>
+<div class="banner">
+  <h1>Free EAD Hosting</h1>
 </div>
-  <p>In order to qualify for free hosting, descriptions of archival collections must meet the following conditions:</p>
+  <h2>Conditions</h2>
+
 <div class="conditions">
-  <div class="condition1 color4">Files must be valid <a href="http://www.loc.gov/ead/">EAD XML</a> version 
-<a href="http://www.loc.gov/ead/ead2002a.html">2002 DTD</a> or <a href="http://www.loc.gov/ead/eadschema.html">2002 XSD</a> version checked with <a href="http://github.com/eadhost/eadator">eadhost/eadator</a>.</div>
-  <div class="condition2">Files must be made available under a <a href="http://creativecommons.org/about/cc0">CC0 license</a>.</div>
-  <div class="condition3">Files must describe materials made accessible under archival control or otherwise advance the <a href="http://www.archivists.org">archival profession.</a></div>
+  <p class="intro">
+    In order to qualify for free hosting, descriptions of archival
+    collections must meet the following conditions:
+  </p>
+  <p class="condition1">
+    Files must be valid <a href="http://www.loc.gov/ead/">EAD XML</a>
+    version
+    <a href="http://www.loc.gov/ead/ead2002a.html">2002 DTD</a> or 
+    <a href="http://www.loc.gov/ead/eadschema.html">2002 XSD</a>.  You can check this with 
+    <a href="http://github.com/eadhost/eadator">eadhost/eadator</a>.
+  </p>
+  <p class="condition2">
+    Files must be made available—by the repository controling the
+    materials described—under a
+    <a href="http://creativecommons.org/about/cc0">CC0 license</a> 
+    or otherwise be in the public domain.
+  </p>
+  <p class="condition3">
+    Files must describe materials made accessible under archival
+    control or otherwise advance the 
+    <a href="http://www.archivists.org">archival profession.</a>
+  </p>
 </div>
 
+<h2>Service Vision</h2>
+  <p>
+    Services like 
+    <a href="https://travis-ci.org/">travis-ci</a> and 
+    <a href="https://readthedocs.org/">readthedocs</a>
+    hook into a github using a post commit webhook.  Automatically, when you commit and push to github, your
+    tests are run in the case of travis-ci or your documentation is generated in the case of readthedocs.</p> 
+    <p>Both of these services have sites where users can log in and set up webhooks.  If there 
+    is interest in similar service for EAD, it is possible that
+    eadhost.org will work with webhooks in the future.  Right now there
+    is no post-commit hook, any submissions will be done in batches,
+    and any sign ups will need to be processed manually.
+  </p>
+
+<h2>Service Features</h2>
+  <p>Each github repository that is signed up for eadhost.org gets a site
+  <code>[yournamehere].eadhost.org</code> that serves static HTML versions of your EAD XML files
+  from an <a href="http://aws.amazon.com/cloudfront/">Amazon CloudFront</a> download distribution.</p>
+  You may set up a <code>CNAME</code> alais from your own domain to your eadhost.org site for free as well.
+  </p>
+
+  <p>For an example eadhost.org site, see <code><a href="http://ead-test-col.eadhost.org/">ead-test-col.eadhost.org</a></code>.
+
+<h2>Sign up</h2>
+  <p>To sign up, create a <a href="https://github.com/eadhost/eadhost/issues">New Issue in the issue tracker in github</a> 
+  that includes the URL to your github repository of CC0 licensed EAD finding aids.
+  </p>
+
+<h2>Experimental Service</h2>
+<p>
+This service is provided by Brian Tingle ''AS IS'' and any express
+or implied warranties, including, but not limited to, the implied
+warranties of merchantability and fitness for a particular purpose
+are disclaimed. In no event shall eadhost.org, its contributors,
+employees, volunteers, officers or directors be liable for any
+direct, indirect, incidental, special, exemplary, or consequential
+damages (including, but not limited to, procurement of substitute
+goods or services; loss of use, data, or profits; or business
+interruption) however caused and on any theory of liability, whether
+in contract, strict liability, or tort (including negligence or
+otherwise) arising in any way out of the use of this service, even
+if advised of the possibility of such damage.
+</p>
+<h2>Open Company</h2>
+Chad Whitacre, the founder of <a href="https://www.gittip.com">Gittip</a>, described the concept of an
+"open company" in his July 2, 2012 post to 
+<a href="http://blog.gittip.com/post/26350459746/the-first-open-company">
+The Gittip Blog: THE FIRST OPEN COMPANY</a>:
+<blockquote>
+  <ol>
+<li><strong>Be as open as possible.</strong> An open company develops all of its products publicly, and freely shares all of its intellectual property. Any software it writes is open source. It publishes as much financial and other data as it can without compromising customer privacy. All employees of the company are publicly listed along with their level of access to private company information and private customer data.</li>
+<li><strong>Charge as little as possible.</strong> An open company tries to charge as little for its products and services as possible. Price to cost, that is, instead of to value.</li>
+<li><strong>Don’t compensate employees.</strong> Employees of an open company don’t earn a wage or salary or receive benefits from the company. Their only distinction from non-employees is their access to sensitive data, such as private customer data, passwords, and detailed financial information.</li>
+  </ol>
+</blockquote>
+For the time being, any cash costs of the project will be paid by Brian Tingle.  It is possible a Gittip
+or some sort of crowdfunding might be set up in the future if this ever ends up costing me more
+than my cable bill to support.
+<p>
+<h2>Privacy and logs</h2>
+<p>No logging or use statistics are kept at this time.  Contributors must agree to <a href="https://github.com">Github's</a>
+terms and conditions.</p>
+</p>
+<h2>Source Code</h2>
+<p>See <a href="https://github.com/eadhost/">eadhost organization page on gitub</a>.</p>
+<h2>Contact</h2>
+twitter: <a href="http://twitter.com/tingletech">@tingletech</a><br/>
+github issues: <a href="https://github.com/eadhost/eadhost/issues">eadhost/eadhost</a>

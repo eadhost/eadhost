@@ -1,44 +1,54 @@
 @import "scheme.less"; // color scheme
 @import "bootstrap-theme.less"; // bootstrap
-@import "1pxdeep.less"; // 1pxdeep theme
+@import "_1pxdeep.less"; // 1pxdeep theme
 @import "style.less";
 
+// add some space to the top for the bootstrap top bar
 body {
   padding-top: 25px;
+  padding-bottom: 25px;
 }
-
-    .code-color(@color) {
-        background:@color;
-        .contrast(@color);
-        border-color:@color;
-    }
-
-
+// used to apply scheme.less color scheme
+.code-color(@color) {
+  background:@color;
+  .contrast(@color);
+  border-color:@color;
+}
+// banner on home page
+.banner {
+  .jumbotron;
+  .code-color(@color3);
+  text-align: center;
+}
 .conditions {
   .make-row();
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    height: 12em;
+  }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    height: 8em;
+  }
+}
+.conditions .intro {
+//  padding: @jumbotron-padding * 0.25;
+  .container;
 }
 .condition1 {
-  .make-sm-column(3);
-  .make-md-column(3);
-  .make-lg-column(3);
   .code-color(@color2b)
 }
 .condition2 {
-  .make-sm-column(3);
-  .make-sm-column-offset(1);
-  .make-md-column(3);
-  .make-md-column-offset(1);
-  .make-lg-column(3);
-  .make-lg-column-offset(1);
   .code-color(@color3a)
 }
 .condition3 {
-  .make-sm-column(3);
-  .make-sm-column-offset(1);
-  .make-md-column(3);
-  .make-md-column-offset(1);
-  .make-lg-column(3);
-  .make-lg-column-offset(1);
   .code-color(@color4b)
 }
-
+.condition1, .condition2, .condition3 {
+  .make-lg-column(4);
+  .make-md-column(4);
+  .make-sm-column(4);
+  height: 100%;
+  // jumbotronesque
+  padding: @jumbotron-padding * 0.5;
+  margin-bottom: @jumbotron-padding * 0.25;
+  border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+}
